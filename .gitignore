@@ -111,3 +111,4 @@ node_modules
 
 # Celery
 celerybeat-schedule
+/temp.py
