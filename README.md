@@ -1,7 +1,7 @@
 # test-task-for-ivelum
 ## Установка
     - copy .env.example to .env
-    - set preposition and main url in settings.py
+    - set preposition, main url and target site in settings.py
     - docker-compose up
 
 https://github.com/ivelum/job/blob/master/code_challenges/python.md
