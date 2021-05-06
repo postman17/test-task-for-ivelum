@@ -20,11 +20,12 @@ def is_valid_text_elem(elem):
 
 def is_target_link(url):
     """Check is target link."""
-    return 'habr' in url
+    target_url = urlparse(settings.TARGET_SITE).netloc
+    return target_url in url
 
 
 def get_edited_html(path, *args, **kwargs):
-    """Get edited habr article html."""
+    """Get edited site html."""
     html_data = requests.get(f'{settings.TARGET_SITE}{path}').text
     soup = BeautifulSoup(html_data, 'html.parser')
     text_elements = soup.find_all(text=True)
