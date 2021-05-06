@@ -25,7 +25,7 @@ def is_target_link(url):
 
 def get_edited_html(path, *args, **kwargs):
     """Get edited habr article html."""
-    html_data = requests.get(f'https://habr.com{path}').text
+    html_data = requests.get(f'{settings.TARGET_SITE}{path}').text
     soup = BeautifulSoup(html_data, 'html.parser')
     text_elements = soup.find_all(text=True)
     for elem in text_elements:

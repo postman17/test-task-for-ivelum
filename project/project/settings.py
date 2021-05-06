@@ -127,3 +127,4 @@ STATIC_URL = '/static/'
 
 PREPOSITION = '™'
 MAIN_URL = 'http://127.0.0.1:8000'
+TARGET_SITE = 'https://habr.com'
